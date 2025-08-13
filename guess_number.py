@@ -6,8 +6,8 @@ answer = random.randint(1, 10)
 
 print("1〜10の数字を当ててください！")
 
-# 最大6回までチャレンジ
-for attempt in range(6):
+# 最大4回までチャレンジ
+for attempt in range(4):
     guess = int(input(f"{attempt+1}回目の予想: "))
     
     if guess == answer:
