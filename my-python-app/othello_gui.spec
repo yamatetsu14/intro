@@ -32,7 +32,6 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['Resources/icon.icns'],
 )
 coll = COLLECT(
     exe,
@@ -46,6 +45,6 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='othello_gui.app',
-    icon='Resources/icon.icns',
+    icon=None,
     bundle_identifier=None,
 )
